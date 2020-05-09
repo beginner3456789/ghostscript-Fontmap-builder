@@ -7,8 +7,8 @@ The first step should be to rename or remove existing Fontmap files from directo
 Any old Fontmap files will prevent ghostscript from checking all of the fonts.
 The script will find the ghostscript compatible font files and make a single Fontmap file in /Resource/Font/ of ghostscript.
 The directories to be searched should be edited for individual preferences.
-Duplicate FontName files can be a problem because ghostscript actually does all the work.
-The GS_FONTPATH isn't needed in .profile or .bashrc because this script finds them all and prevents redundant searches.
+Duplicate FontName files can be a problem because ghostscript actually does all the work according to programmed search ordering and is explained in the ghostscript use documentation.
+The GS_FONTPATH isn't needed in .profile or .bashrc because this script finds the fonts first and prevents redundant searches.
 The gsFontmap.sh script can be put in a crontab to update this unified Fontmap regularly.
 If run as a user then first change the permissions of the Fontmap file to be updated so a user can make changes.
-Depending on your fonts you might want to remove/replace the /Resource/Init/Fontmap as in my setup.
+Depending on your fonts you might want to remove/replace the ghostscript /Resource/Init/Fontmap as in my setup.
