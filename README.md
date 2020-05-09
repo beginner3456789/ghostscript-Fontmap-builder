@@ -11,3 +11,4 @@ Duplicate FontName files can be a problem because ghostscript actually does all 
 The GS_FONTPATH isn't needed because this script finds them all and prevents redundant searches.
 The gsFontmap.sh script can be put in a crontab to update this unified Fontmap regularly.
 If run as a user then first change the permissions of the Fontmap file so a user can make changes.
+Depending on your fonts you might want to remove/replace the /Resource/Init/Fontmap as in my setup.
