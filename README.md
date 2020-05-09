@@ -4,9 +4,9 @@ builds a Fontmap file automatically for Linux ghostscript
 +++ edit the gsFontmap.sh script for your installation +++
 
 The first step should be to rename or remove existing Fontmap files from directories to be searched.
-Any old Fontmap files will prevent ghostscript from checking all of the fonts.
+Any old Fontmap files will prevent ghostscript from checking all of the available fonts. Maintaining an assortment of Fontmap files in varied directories is difficult when organizing many fonts and the primary reason for this unified Fontmap builder script.
 The script will find the ghostscript compatible font files and make a single Fontmap file in /Resource/Font/ of ghostscript.
-The directories to be searched should be edited for individual preferences.
+The directories to be searched at GS_FONTPATH in the script should be edited for individual preferences.
 Duplicate FontName files can be a problem because ghostscript actually does all the work according to programmed search ordering and is explained in the ghostscript use documentation.
 The GS_FONTPATH isn't needed in .profile or .bashrc because this script finds the fonts first and prevents redundant searches.
 The gsFontmap.sh script can be put in a crontab to update this unified Fontmap regularly.
