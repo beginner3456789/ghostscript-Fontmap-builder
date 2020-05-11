@@ -12,3 +12,4 @@ Because of the unified Fontmap, the GS_FONTPATH shouldn't be defined in .profile
 The gsFontmap.sh script can be put in a crontab to update this unified Fontmap regularly.
 If run as a user then first change the permissions of the Fontmap file to be updated so a user can make changes.
 Depending on your fonts you might want to remove/replace the ghostscript /Resource/Init/Fontmap as in my setup.
+The GS_OPTIONS for -dNONATIVEFONTMAP and -dNOPLATFONTS might be needed depending on the installation.
