@@ -3,8 +3,7 @@
 # look for fonts in the ghostscript and fonts paths and make new Fontmap
 # change this GS_FONTPATH to search your directories and add to Fontmap
 
-export GS_FONTPATH=/usr/share/ghostscript/fonts:/usr/local/share/fonts
-
+GS_FONTPATH=/usr/share/ghostscript/fonts:/usr/local/share/fonts \
 gs -dBATCH -dNODISPLAY -dNOFONTMAP -c '/none findfont loadallfonts' | \
 grep Loading | \
 sed -e 's/\.\.\./   /' | \
