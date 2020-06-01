@@ -14,7 +14,7 @@ If run as a user then first change the permissions of the Fontmap file to be upd
 Depending on your fonts you might want to remove/replace the ghostscript /Resource/Init/Fontmap as in my setup.
 The GS_OPTIONS for -dNONATIVEFONTMAP and -dNOPLATFONTS might be needed depending on the installation.
 
-Here is the way ghostscript searches for the Fontmap files in my ghostscript (the /usr/share/fonts/ and /usr/share/fonts/X11/Type1 entries were added by my distibutions build):
+Here is the way ghostscript searches for the Fontmap files in my ghostscript (the /usr/share/fonts/ and /usr/share/fonts/Type1/ entries were added by my distibutions build):
 
 GPL Ghostscript 9.52 (2020-03-19)
 
